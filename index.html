@@ -399,13 +399,70 @@
             margin-bottom: 35px;
         }
 
+        /* 针对1920*1080优化 */
+        @media screen and (min-width: 1700px) and (max-width: 2100px) {
+            .wrapper {
+                width: 980px;
+                transform: translateX(calc(-50% + 60px));
+                gap: 50px;
+            }
+            
+            body {
+                padding: 85px 40px 50px 40px;
+            }
+        }
+
+        /* 针对1280*1080等中等宽度屏幕优化 */
+        @media screen and (min-width: 1200px) and (max-width: 1699px) {
+            .wrapper {
+                width: 100%;
+                max-width: 1000px;
+                gap: 40px;
+                margin: 0 auto;
+                transform: none;
+                left: auto;
+            }
+            
+            body {
+                padding: 75px 25px 40px 25px;
+            }
+            
+            header {
+                width: 280px;
+                top: 75px;
+            }
+            
+            header ul {
+                width: 280px;
+            }
+            
+            header li {
+                width: 85px;
+            }
+            
+            header ul li + li + li {
+                width: 85px;
+            }
+            
+            .profile-img {
+                width: 210px;
+                height: 210px;
+            }
+            
+            section {
+                max-width: 620px;
+            }
+        }
+
         /* 响应式设计 */
-        @media screen and (max-width: 1300px) {
+        @media screen and (max-width: 1199px) {
             .wrapper {
                 width: 100%;
                 max-width: 1140px;
                 gap: 30px;
                 margin: 0 auto;
+                transform: none;
+                left: auto;
             }
             
             body {
