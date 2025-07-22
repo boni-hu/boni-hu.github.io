@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Boni Hu</title>
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/jpg" href="./images/star-.png">
+    <link rel="icon" type="image/jpg" href="./images/star.png">
     <style>
-        @import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700|Source+Sans+Pro:400,600,700);
+        @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
         body {
             padding: 85px 50px 50px 50px;
-            font: 18px/1.5 "Source Serif Pro", Georgia, "Times New Roman", serif;
-            color: #000;
+            font: 18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #333;
             font-weight: 400;
         }
 
         h1, h2, h3, h4, h5, h6 {
-            color: #000;
+            color: #222;
             margin: 0 0 19px;
-            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
         p, ul, ol, table, pre, dl {
             margin: 0 0 20px;
             font-size: 17px;
-            color: #000;
+            color: #333;
         }
 
         h1, h2, h3 {
@@ -33,36 +32,33 @@
         }
 
         h1 {
-            font-size: 30px;
-            color: #000;
+            font-size: 26px;
+            color: #222;
         }
 
         h2 {
-            color: #000;
+            color: #393939;
             font-size: 26px;
-            margin-top: 45px;
-            margin-bottom: 25px;
         }
 
         .section-subtitle {
-            color: #000;
-            font-size: 22px;
-            margin-top: 40px;
-            margin-bottom: 15px;
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
             font-weight: 700;
         }
 
         h3, h4, h5, h6 {
-            color: #000;
+            color: #494949;
         }
 
         a {
-            color: #4a90e2;
+            color: #F39C12;
             text-decoration: none;
         }
 
         a:hover, a:focus {
-            color: #357abd;
+            color: #E67E22;
             font-weight: bold;
         }
 
@@ -78,12 +74,11 @@
         }
 
         .wrapper {
-            width: 1030px;
-            position: relative;
-            left: 50%;
-            transform: translateX(calc(-50% + 100px));
+            width: 1340px;
+            margin: 0 auto;
+            margin-left: calc(50% - 460px);
             display: flex;
-            gap: 80px;
+            gap: 160px;
             align-items: flex-start;
         }
 
@@ -184,7 +179,7 @@
         }
 
         strong {
-            color: #000;
+            color: #222;
             font-weight: 700;
         }
 
@@ -224,9 +219,7 @@
         }
 
         .profile-img {
-            width: 224px;
-            height: 224px;
-            object-fit: cover;
+            width: 320px;
             border-radius: 0px;
             margin-bottom: 20px;
         }
@@ -246,36 +239,29 @@
             color: #333;
             font-size: 13px;
         }
-        
+
         .contact-section {
             margin-bottom: 20px;
         }
 
         .contact-section h3 {
-            color: #000;
+            color: #393939;
             font-size: 16px;
             margin-bottom: 10px;
         }
 
         .contact-links {
-            font-size: 15px;
-            line-height: 1.8;
-            margin-top: 15px;
+            font-size: 13px;
+            line-height: 1.6;
         }
 
         .contact-links a {
-            color: #000;
-            text-decoration: none;
-            margin-left: 5px;
+            display: block;
+            margin-bottom: 3px;
         }
 
-        .contact-links a:hover {
-            color: #357abd;
-            text-decoration: underline;
-        }
-        
         .news-section {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .news-section h3 {
@@ -297,7 +283,7 @@
         }
 
         .paper {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             line-height: 1.5;
             display: flex;
             align-items: flex-start;
@@ -305,16 +291,16 @@
         }
         
         .paper-image {
-            width: 120px;
-            height: auto;
-            max-height: 120px;
-            object-fit: contain;
-            border-radius: 5px;
-            border: 1px solid #e5e5e5;
-            flex-shrink: 0;
-            position: relative;
-            background-color: #f8f8f8;
-        }
+	    width: 120px;
+	    height: auto;
+	    max-height: 120px;
+	    object-fit: contain;
+	    border-radius: 5px;
+	    border: 1px solid #e5e5e5;
+	    flex-shrink: 0;
+	    position: relative;
+	    background-color: #f8f8f8;
+	}
 
         .venue-badge {
             position: absolute;
@@ -336,31 +322,31 @@
 
         .paper-title {
             font-weight: 700;
-            color: #000;
+            color: #222;
             margin-bottom: 3px;
             font-size: 17px;
         }
 
         .paper-authors {
-            color: #000;
+            color: #333;
             margin-bottom: 3px;
             font-size: 16px;
             font-weight: 500;
         }
 
         .paper-authors a {
-            color: #000;
+            color: #333;
             text-decoration: none;
             font-weight: 500;
         }
 
         .paper-authors a:hover {
-            color: #4a90e2;
+            color: #F39C12;
             text-decoration: underline;
         }
 
         .paper-venue {
-            color: #000;
+            color: #333;
             font-style: italic;
             margin-bottom: 5px;
             font-size: 16px;
@@ -370,33 +356,8 @@
         .paper-links a {
             margin-right: 5px;
             font-size: 17px;
-            color: #4a90e2;
+            color: #F39C12;
             font-weight: normal;
-        }
-
-        /* About Me section spacing */
-        #about {
-            margin-bottom: 25px;
-        }
-
-        /* Consistent section content spacing */
-        .section-content {
-            margin-bottom: 30px;
-        }
-
-        /* Last paragraph in About section */
-        .highlight-notice {
-            margin-bottom: 35px;
-        }
-
-        /* News list spacing */
-        .news-list {
-            margin-bottom: 35px;
-        }
-
-        /* Research and Academic sections list spacing */
-        .experience-list {
-            margin-bottom: 35px;
         }
 
         /* 响应式设计 */
@@ -404,8 +365,9 @@
             .wrapper {
                 width: 100%;
                 max-width: 1140px;
-                gap: 30px;
+                gap: 100px;
                 margin: 0 auto;
+                margin-left: calc(50% - 490px);
             }
             
             body {
@@ -430,8 +392,7 @@
             }
             
             .profile-img {
-                width: 210px;
-                height: 210px;
+                width: 300px;
             }
             
             section {
@@ -468,8 +429,7 @@
 
             .profile-img {
                 width: 100%;
-                max-width: 224px;
-                height: 224px;
+                max-width: 300px;
             }
 
             .paper {
@@ -532,32 +492,24 @@
 <body>
     <div class="wrapper">
         <header>
-            <p style="color: #000; font-size: 24px; margin-bottom: 20px; text-align: left;">Boni Hu </p>
-            <img src="images/boni-1.jpg" alt="Boni Hu" class="profile-img">
-                                  
-            <div class="contact-section">
-                <div class="contact-links">
-                    📧 <a href="mailto:huboni@mail.nwpu.edu.cn">Email</a><br>
-                    🐦 <a href="https://x.com/boni_huuu">Twitter</a><br>
-                    💼 <a href="#">LinkedIn</a><br>
-                    🏠 <a href="https://github.com/boni-hu">Github</a><br>
-                    🎓 <a href="https://scholar.google.com/citations?user=23gBwAkAAAAJ&hl=en&oi=ao">Google Scholar</a>
-                </div>
-            </div>
+            <h1 style="color: #F39C12; font-size: 32px; margin-bottom: 30px;"><a href="https://boni-hu.github.io/" style="color: #F39C12; text-decoration: none;">Boni Hu</a></h1>
+            
+            <img src="images/boni.jpg" alt="Boni Hu" class="profile-img">
             
             <footer>
+                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
             </footer>
         </header>
         
         <section>
-            <h1 id="about">About Me</h1>
+            <h1 id="about" style="margin-bottom: 30px;">Biography</h1>
             
-            <p>Hi! I am a fourth-year Ph.D. candidate at under the supervision of Prof. <a href="https://scholar.google.com/citations?user=spwZ6b4AAAAJ&hl=en">Shuhui Bu</a>. My research primarily focuses on developing vision representations that capture both geometric structures and semantic relationships in remote sensing imagery, enabling robust and accurate place recognition and geolocalization. Currently, my exploration focuses on equipping large language models and vision-language models (VLMs) with spatial intelligence for remote sensing applications. I also have a strong interest in applying these techniques to medical imaging and surgical robotics applications.</p>
+            <p>I am a fourth-year PhD candidate under the supervision of Prof. <a href="http://www.adv-ci.com/blog/about-me/">Shuhui Bu</a>. My research centers on developing advanced vision representations for remote sensing applications, with a particular emphasis on place recognition and geolocalization systems deployed on UAV platforms. I am passionate about designing elegant and efficient visual representation methods. Looking ahead, I am excited to explore the integration of spatial intelligence into large language models and vision-language models (VLMs).</p>
 
-            <p class="highlight-notice"><strong>[TOP] I am actively seeking postdoctoral and industry opportunities starting from 2026</strong>.</p>
+            <p><strong>[TOP] I am currently seeking relevant postdoctoral positions</strong>.</p>
 
-            <h2 class="section-subtitle">News:</h2>
-            <ul class="news-list" style="list-style: disc; margin-left: 20px; font-size: 16px; color: #000;">
+            <h2 class="section-subtitle" style="margin-bottom: 15px; margin-top: 35px;">News:</h2>
+            <ul style="list-style: disc; margin-left: 20px; margin-bottom: 25px; font-size: 16px; color: #333;">
                 <li>[June 2025] <a href="#publication-1">OriLoc</a> accepted to JSTARS 🧭</li>
                 <li>[June 2025] <a href="#publication-7">FP4 Pretraining</a> accepted to ICML 2025 Workshop 🚀</li>
                 <li>[Feb 2025] <a href="#publication-8">FlashGS</a> accepted to CVPR 2025 ⚡</li>
@@ -569,7 +521,15 @@
                 <li>[July 2020] <a href="#publication-11">3D Aortic Reconstruction</a> accepted to MICCAI 2020 🫀</li>
             </ul>
 
-            <h2 id="publications">Selected Publications</h2>
+            <h2 class="section-subtitle" style="margin-bottom: 15px; margin-top: 35px;">Contact:</h2>
+            <p style="margin-bottom: 25px; font-size: 17px; color: #333;">
+                📧 <a href="mailto:huboni@mail.nwpu.edu.cn">huboni@mail.nwpu.edu.cn</a> 
+                🔗 <a href="#">Linkedin</a> 
+                🌏 <a href="https://x.com/boni_huuu">Twitter</a> 
+                🏠 <a href="https://github.com/boni-hu">Github</a>
+            </p>
+
+            <h2 id="publications" style="margin-bottom: 30px; margin-top: 35px;">Selected Publications <a href="https://scholar.google.com/citations?user=23gBwAkAAAAJ&hl=en&oi=ao"> [Google Scholar]</a></h2>
             
             <!-- First Author Papers -->
             <div class="paper" id="publication-12">
@@ -581,11 +541,10 @@
                     <div class="paper-title">
                         Hi^2-GSLoc: Dual-Hierarchical Gaussian-Specific Visual Relocalization for Remote Sensing. <a href="https://arxiv.org/abs/2507.15683">[Paper]</a>
                     </div>
-                    <div class="paper-authors"><strong>Boni Hu</strong>, Zhenyu Xia, Lin Chen, Pengcheng Han, <a href="https://scholar.google.com/citations?user=spwZ6b4AAAAJ&hl=en">Shuhui Bu</a></div>
+                    <div class="paper-authors"><strong>Boni Hu</strong>, Zhenyu Xia, Lin Chen, Pengcheng Han, <a href="http://www.adv-ci.com/blog/about-me/">Shuhui Bu</a></div>
                     <div class="paper-venue">ArXiv, 2025. Under review.</div>
                 </div>
             </div>
-            
             <div class="paper" id="publication-1">
                 <div style="position: relative;">
                     <img src="./images/10-oriloc.png" alt="OriLoc" class="paper-image">
@@ -595,7 +554,7 @@
                     <div class="paper-title">
                         OriLoc: Unlimited-FoV And Orientation-Free Cross-View Geolocalization. <a href="https://ieeexplore.ieee.org/document/11037236">[Paper]</a>
                     </div>
-                    <div class="paper-authors"><strong>Boni Hu</strong>, Haowei Li, <a href="https://scholar.google.com/citations?user=spwZ6b4AAAAJ&hl=en">Shuhui Bu</a>, Lin Chen, Pengcheng Han</div>
+                    <div class="paper-authors"><strong>Boni Hu</strong>, Haowei Li, <a href="http://www.adv-ci.com/blog/about-me/">Shuhui Bu</a>, Lin Chen, Pengcheng Han</div>
                     <div class="paper-venue">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2025</div>
                 </div>
             </div>
@@ -609,7 +568,7 @@
                     <div class="paper-title">
                         CurriculumLoc: Enhancing Cross-Domain Geolocalization Through Multistage Refinement. <a href="https://ieeexplore.ieee.org/abstract/document/10477445">[Paper]</a> <a href="https://github.com/boni-hu/CurriculumLoc">[Code]</a>
                     </div>
-                    <div class="paper-authors"><strong>Boni Hu</strong>, Lin Chen, <a href="https://www.rjchen.site/">Runjian Chen</a>, <a href="https://scholar.google.com/citations?user=spwZ6b4AAAAJ&hl=en">Shuhui Bu</a>, Pengcheng Han, Haowei Li</div>
+                    <div class="paper-authors"><strong>Boni Hu</strong>, Lin Chen, <a href="https://www.rjchen.site/">Runjian Chen</a>, <a href="http://www.adv-ci.com/blog/about-me/">Shuhui Bu</a>, Pengcheng Han, Haowei Li</div>
                     <div class="paper-venue">IEEE Transactions on Geoscience and Remote Sensing, 2024</div>
                 </div>
             </div>
@@ -624,7 +583,7 @@
                     <div class="paper-title">
                         G2-Mapping: General Gaussian Mapping For Monocular, RGB-D, And LiDAR-Inertial-Visual Systems. <a href="https://ieeexplore.ieee.org/document/10884537">[Paper]</a>
                     </div>
-                    <div class="paper-authors">Lin Chen, <strong>Boni Hu</strong>, Wang Jvboxi, <a href="https://scholar.google.com/citations?user=spwZ6b4AAAAJ&hl=en">Shuhui Bu</a>, Wang Guangming, Pengcheng Han, Chen Jian</div>
+                    <div class="paper-authors">Lin Chen, <strong>Boni Hu</strong>, Wang Jvboxi, <a href="http://www.adv-ci.com/blog/about-me/">Shuhui Bu</a>, Wang Guangming, Pengcheng Han, Chen Jian</div>
                     <div class="paper-venue">IEEE Transactions on Automation Science and Engineering, 2025</div>
                 </div>
             </div>
@@ -643,7 +602,6 @@
                     <div class="paper-venue">Proceedings of the Computer Vision and Pattern Recognition Conference, 2025</div>
                 </div>
             </div>
-            
             <div class="paper" id="publication-7">
                 <div style="position: relative;">
                     <img src="./images/4-fp4.png" alt="FP4 Pretraining" class="paper-image">
@@ -668,7 +626,7 @@
                     <div class="paper-title">
                         MDINet: Multi-Domain Incremental Network For Change Detection. <a href="https://ieeexplore.ieee.org/abstract/document/10379022">[Paper]</a>
                     </div>
-                    <div class="paper-authors">Lean Weng, Wengqing Wang, <strong>Boni Hu</strong>, Pengcheng Han, Shaocheng Xue, Yu Zhang, Haowei Li, Jie Jin, <a href="https://scholar.google.com/citations?user=spwZ6b4AAAAJ&hl=en">Shuhui Bu</a></div>
+                    <div class="paper-authors">Lean Weng, Wengqing Wang, <strong>Boni Hu</strong>, Pengcheng Han, Shaocheng Xue, Yu Zhang, Haowei Li, Jie Jin, <a href="http://www.adv-ci.com/blog/about-me/">Shuhui Bu</a></div>
                     <div class="paper-venue">IEEE Transactions on Geoscience and Remote Sensing, 2024</div>
                 </div>
             </div>
@@ -682,7 +640,7 @@
                     <div class="paper-title">
                         GCG-Net: Graph Classification Geolocation Network. <a href="https://ieeexplore.ieee.org/document/10177735">[Paper]</a>
                     </div>
-                    <div class="paper-authors">Yu Zhang, <a href="https://scholar.google.com/citations?user=spwZ6b4AAAAJ&hl=en">Shuhui Bu</a>, <strong>Boni Hu</strong>, Pengcheng Han, Lean Weng, Shaocheng Xue</div>
+                    <div class="paper-authors">Yu Zhang, <a href="http://www.adv-ci.com/blog/about-me/">Shuhui Bu</a>, <strong>Boni Hu</strong>, Pengcheng Han, Lean Weng, Shaocheng Xue</div>
                     <div class="paper-venue">IEEE Transactions on Geoscience and Remote Sensing, 2023</div>
                 </div>
             </div>
@@ -717,17 +675,17 @@
 
             <h2 id="research">Research Experience</h2>
             
-            <ul class="experience-list" style="list-style: disc; margin-left: 20px; font-size: 16px; color: #000;">
-                <li>Spatial Intelligence with Large Language Models and Vision-Language Models &nbsp;&nbsp; <em>Now - </em></li>
-                <li>3D Computer Vision, particularly Visual Geolocalization and Place Recognition in Remote Sensing &nbsp;&nbsp; <em>2021 - 2025</em></li>
+            <ul style="list-style: disc; margin-left: 20px; margin-bottom: 25px; font-size: 16px; color: #333;">
+                <li>Spatial Intelligence in Large Language Models and Vision-Language Models &nbsp;&nbsp; <em>2025 - Now</em></li>
+                <li>Visual Geolocalization and Place Recognition on Remote Sensing &nbsp;&nbsp; <em>2021 - 2025</em></li>
                 <li>Medical Image Processing & 3D Computer Vision &nbsp;&nbsp; <em>2019 - 2021</em></li>
             </ul>
 
             <h2 id="academic">Academic Experience</h2>
             
-            <div class="section-content">
-                <p style="font-size: 17px; color: #000;"><strong>Reviewer for:</strong></p>
-                <ul style="list-style: disc; margin-left: 20px; font-size: 16px; color: #000; margin-bottom: 35px;">
+            <div style="margin-bottom: 25px;">
+                <p style="font-size: 17px; color: #333;"><strong>Reviewer for:</strong></p>
+                <ul style="list-style: disc; margin-left: 20px; font-size: 16px; color: #333;">
                     <li>IEEE Transactions on Geoscience and Remote Sensing</li>
                     <li>International Conference on Pattern Recognition (ICPR)</li>
                     <li>IEEE International Conference on Robotics and Automation (ICRA)</li>
@@ -739,8 +697,8 @@
 
             <h2 id="honors">Selected Honors</h2>
             
-            <ul style="list-style: disc; margin-left: 20px; margin-bottom: 50px; font-size: 16px; color: #000;">
-                <li>Outstanding Graduate Student, 2024.</li>
+            <ul style="list-style: disc; margin-left: 20px; margin-bottom: 25px; font-size: 16px; color: #333;">
+            	<li>Outstanding Graduate Student, 2024.</li>
                 <li><strong>OUTSTANDING GRADUATE</strong> of Northwestern Polytechnical University, 2021.</li>
                 <li>Academic Scholarship, 2018-2014.</li>
                 <li>First-Class Academic Scholarship, 2017.</li>
